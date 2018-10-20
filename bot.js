@@ -17,7 +17,7 @@ client.on("message", message => {
 
 
 client.on('ready', () => {
-     client.user.setActivity("الكلام",{type: 'WATCHING'});
+     client.user.setActivity("%help",{type: 'WATCHING'});
 
 });
 
