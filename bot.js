@@ -16,10 +16,7 @@ client.on("message", message => {
 });
 
 
-client.on('ready', () => {
-     client.user.setActivity("%help",{type: 'WATCHING'});
 
-});
 
 
 
