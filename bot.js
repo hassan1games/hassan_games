@@ -453,7 +453,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content.startsWith("%تهكير")) {
       if (message.author.bot) return
-           message.delete();
+           message.delete(1000);
              let args = message.content.split(' ').slice(1);
                    let virusname = args.join(' ');
                  if (virusname < 1) {
