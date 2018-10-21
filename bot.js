@@ -1122,7 +1122,7 @@ client.on("message", (message) => {
 
 client.on('message', async message => {
   let args = message.content.split(" ");
-  if(message.content.startsWith(prefix + "%ميوت")) {
+  if(message.content.startsWith(prefix + "mute")) {
     if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.send('').then(msg => {
       msg.delete(3500);
       message.delete(3500);
