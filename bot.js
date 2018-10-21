@@ -1081,7 +1081,7 @@ client.on("message", (message) => {
             message.channel.send(`:white_check_mark: **تم إنشاء تذكرتك ، #${c.name}.**`);
             const embed = new Discord.RichEmbed()
                 .setColor(0xCF40FA)
-                .addField(`مرحباّ ${message.author.username}!`, `يرجى محاولة شرح سبب فتح هذه التذكرة بأكبر قدر ممكن من التفاصيل. سيكون فريق الدعم لدينا قريبا للمساعدة.`)
+                .addField(`مرحباّ ${message.author.username}!`, `يرجي شرح سبب فتح هذا التذكرة . سيكون فريق الدعم لدينا قريبا للمساعدة`)
                 .setTimestamp();
             c.send({
                 embed: embed
@@ -1093,9 +1093,9 @@ client.on("message", (message) => {
   if (message.content.startsWith("%close")) {
         if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);
  
-        message.channel.send(`هل أنت متأكد؟ بعد التأكيد ، لا يمكنك عكس هذا الإجراء!\n للتأكيد ، اكتب\`$confirm\`. سيؤدي ذلك إلى مهلة زمنية في غضون 10 ثوانٍ وإلغائها`)
+        message.channel.send(`هل أنت متأكد؟ بعد التأكيد ، لا يمكنك عكس هذا الإجراء!\n للتأكيد ، اكتب\`%confirm\`. سيؤدي ذلك إلى مهلة زمنية في غضون 10 ثوانٍ وإلغائها`)
             .then((m) => {
-                message.channel.awaitMessages(response => response.content === '$confirm', {
+                message.channel.awaitMessages(response => response.content === '%confirm', {
                         max: 1,
                         time: 10000,
                         errors: ['time'],
