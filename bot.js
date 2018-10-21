@@ -64,7 +64,6 @@ client.on('message', message => {
 - هذا الرابط صالح لمده 24 ساعه فقط
 
 **`)
-      message.author.sendEmbed(Embed11)
     }
 });
 
