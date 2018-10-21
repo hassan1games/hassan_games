@@ -418,7 +418,10 @@ client.on('message', message => {
             if (message.content.startsWith("%help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     Help ' ,' **تم ارسال جميع الاوامر الي الخاص ✉**  ')
+.addField('     Help ' ,' **%invite : لدعوة البوت الى سيرفرك
+%server : معلومات عن السيرفر 
+رابط سيرفر الدعم الفني : https://discord.gg/DvzM29w')
+.addField('     Help ' ,' **تم ارسال باقي الاوامر الي الخاص ✉**  ')
 .setColor('#B101FC')
   message.channel.sendEmbed(embed);
     }
