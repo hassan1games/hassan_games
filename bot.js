@@ -420,8 +420,7 @@ client.on('message', message => {
 .setThumbnail(message.author.avatarURL)
 .addField('     Help ' ,' **%invite : لدعوة البوت الى سيرفرك
 %server : معلومات عن السيرفر 
-رابط سيرفر الدعم الفني : https://discord.gg/DvzM29w
-تم ارسال باقي الاوامر الي الخاص ✉**  ')
+تم ارسال باقي الاوامر الي الخاص ✉')
 .setColor('#B101FC')
   message.channel.sendEmbed(embed);
     }
