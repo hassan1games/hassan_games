@@ -5,18 +5,6 @@ var prefix = "%";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
@@ -27,9 +15,6 @@ client.on('ready', () => {
 client.user.setGame(`%help`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
-
-
-
 
 
 
@@ -69,7 +54,6 @@ client.on('message', message => {
 
 	
 	
-	
 client.on('message',async msg => {//Alpha Codes
 //Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes//Alpha Codes
   var prefix = "%";//Alpha Codes
@@ -93,14 +77,11 @@ Dat = currentTime.getDate()//Alpha Codes
   }
  
 });
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
 client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
@@ -108,8 +89,7 @@ client.on('message', message=> {
     message.reply(" **هلا !!**");
     }
 });	
-	
-	
+
 
 
 
@@ -165,9 +145,6 @@ return;
 
 });
 
-	
-	
-
 
 
 
@@ -192,9 +169,6 @@ client.on('message', function(msg) {
       msg.channel.send({embed:embed});
     }
   });
-
-
-
 
 
 
@@ -234,8 +208,6 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 
 
-
-
 client.on ('message',async Sal => { //By Salto7#4595
     let embed = new Discord.RichEmbed()
     if (Sal.content === "%id") {
@@ -250,12 +222,11 @@ client.on ('message',async Sal => { //By Salto7#4595
      Sal.channel.sendEmbed(embed);
     }
   });  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
 client.on('message', message => {
 if(message.content.startsWith("%slots")) {
   let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
@@ -271,7 +242,6 @@ if(message.content.startsWith("%slots")) {
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
 });  
-  
 
 
 
@@ -299,10 +269,6 @@ message.channel.send(`
 
 
 
-
-
-
-
 client.on('message', message => {
               if (!message.channel.guild) return;
       if(message.content =='%member')  /// By KillerFox_ حقوق الفا كودز
@@ -320,10 +286,10 @@ client.on('message', message => {
       message.channel.send(IzRo);
     
     });  
-  
-  
-  
-  
+
+
+
+
   
 	
 
@@ -340,15 +306,12 @@ client.on('message', message => {
 
 
 
-
 client.on('message', msg => {
   if(msg.content === 'هلا')
               setTimeout(function() {  
 msg.reply('**هلا حبي**')
               }, 00)
 });
-
-
 
 
 
@@ -399,9 +362,6 @@ message.author.send(`**
 
 
 
-
-
-
 client.on('message', message => {
             if (message.content.startsWith("%help")) {
      let embed = new Discord.RichEmbed()
@@ -411,7 +371,6 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
-
 
 
 
@@ -429,7 +388,6 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
-
 
 
 
@@ -540,9 +498,6 @@ client.on('message', message => {
          }
  
  })
-
-
-
 
 
 
@@ -971,8 +926,6 @@ client.on('message', message => {
 
 
 
-
-
 client.on('message', message => {
     var args = message.content.split(/[ ]+/)
     if(message.content.includes('كلب')){
@@ -992,16 +945,6 @@ client.on('message', message => {
 
 
 
-
-
-
-
-
-
-
-
-
-
   
 
 client.on ("guildMemberAdd", member => {
@@ -1014,7 +957,6 @@ client.on ("guildMemberAdd", member => {
 client.on ("guildMemberRemove", member => {
    
 })
-
 
 
   
@@ -1036,7 +978,6 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
    message.delete()
   }
  });
-
 
 
 
@@ -1100,18 +1041,6 @@ client.on("message", (message) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 client.on('message', message => {
   if(!message.channel.guild) return;
 if(message.content.startsWith('%bc')) {
@@ -1153,8 +1082,6 @@ msg.delete();
 }
 
 });
-
-
 
 
 
@@ -1459,8 +1386,6 @@ client.on('message', message => {
         }
     }
 });
-
-
 
 
 
